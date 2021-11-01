@@ -19,6 +19,9 @@ public class LinkList {
         }
         return newNode;
     }
+    /*
+    Method to Print all the data in a Linked List
+     */
     public void show(){
         Node temp = head;
         if (head==null){
