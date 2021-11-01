@@ -20,6 +20,20 @@ public class LinkList {
         return newNode;
     }
     /*
+    Method to append data in a Linked List
+     */
+    public Node append(int data){
+        Node newNode = new Node(data);
+        if (head==null){
+            this.head=newNode;
+            this.tail=newNode;
+        }else {
+            tail.next=newNode;
+            this.tail=newNode;
+        }
+        return newNode;
+    }
+    /*
     Method to Print all the data in a Linked List
      */
     public void show(){
