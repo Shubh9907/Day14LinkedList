@@ -4,6 +4,10 @@ public class LinkList {
     Node head;
     Node tail;
 
+    /*
+    Method to push data in Linked List
+    @param
+     */
     public Node push(int data){
         Node newNode = new Node(data);
         if (head==null){
