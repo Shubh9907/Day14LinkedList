@@ -58,6 +58,21 @@ public class LinkList {
         }
         return temp;
     }
+    // this method is used to pop data from last in the linked list
+    public Node popLast(){
+        Node node = head;
+        Node previous=null;
+        if (head==null){
+            System.out.println("The List is Empty");
+        }else {
+            while (!node.next.equals(tail)){
+                node=node.next;
+            }
+            node.next=null;
+            this.tail=node;
+        }
+        return node;
+    }
     /*
     Method to Print all the data in a Linked List
      */
